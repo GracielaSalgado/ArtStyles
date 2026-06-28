@@ -1,0 +1,133 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f0eb;
+  font-family: Georgia, serif;
+  color: #2c2c2c;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.discover-btn {
+  background-color: #2c2c2c;
+  color: #f5f0eb;
+  border: none;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-family: Georgia, serif;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.discover-btn:hover {
+  background-color: #555;
+}
+
+.discover-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.artwork-card {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  background: white;
+  padding: 32px;
+  margin-bottom: 40px;
+}
+
+.artwork-card img {
+  width: 300px;
+  height: 380px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: #eee;
+}
+
+.artwork-card h2 {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.artwork-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.artwork-info button {
+  background: #f5f0eb;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align: left;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  cursor: pointer;
+  color: #2c2c2c;
+}
+
+.artwork-info button:hover {
+  border-color: #2c2c2c;
+}
+
+.artwork-info button.banned {
+  background: #ffe4e4;
+  border-color: #e88;
+  color: #c00;
+  text-decoration: line-through;
+}
+
+.ban-section {
+  border-top: 2px solid #2c2c2c;
+  padding-top: 32px;
+  text-align: center;
+}
+
+.ban-section h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.ban-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.ban-chip {
+  background: #ffe4e4;
+  border: 1px solid #e88;
+  color: #c00;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+  font-size: 14px;
+}
+
+.ban-chip:hover {
+  background: #fcc;
+}
